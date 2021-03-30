@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faTrash, faPlus, faEdit } from "@fortawesome/free-solid-svg-icons";
+library.add(faTrash, faEdit, faPlus);
 
 ReactDOM.render(
   <React.StrictMode>
