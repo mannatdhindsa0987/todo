@@ -47,7 +47,7 @@ addToDo = (todo) => {
           <th>ID</th>
           <th>Title</th>
           <th>Status</th>
-          <th>Edit</th>
+          <th>Action</th>
         </tr>
         </thead>
         <tbody>
@@ -58,12 +58,12 @@ addToDo = (todo) => {
               <td>{x.Title}</td>
               <td style={{ color: x.Status === "Done" ? "green" : "red" }}>{x.Status}</td>
               <td>
-              <button className="btn btn-outline-dark" onClick={() => this.deleteToDo(x)}>
+              <button className="btn del btn-outline-danger" onClick={() => this.deleteToDo(x)}>
               <span>
                 <FontAwesomeIcon icon="trash"></FontAwesomeIcon> 
                </span>
                </button>
-                <button className="btn btn-outline-dark" onClick={() => this.editToDo(x)}>
+                <button className="btn edit btn-outline-dark" onClick={() => this.editToDo(x)}>
                  <span>
                  <FontAwesomeIcon icon="edit"></FontAwesomeIcon>
               </span>

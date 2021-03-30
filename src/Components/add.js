@@ -39,27 +39,7 @@ handleIdChange = (event) => {
     };
     render() {
         return (
-            // <div>
-            //     <h3 className="h3">
-            //         Add ToDo
-            //     </h3>
-            //     <form onSubmit={this.handleToDoSubmit} >
-            //         <div className="form-group" >
-            //             <input value={this.state.Id} onChange={this.handleIdChange} className="form-control" placeholder="Enter Id" />
-            //         </div>
-            //         <div className="form-group" >
-            //             <input value={this.state.Title} onChange={this.handleTitleChange} className="form-control" placeholder="Enter Title" />
-            //         </div>
-            //         <div className="form-group">
-            //             <select value={this.state.Status} onChange={this.handleStatusChange} className="form-control" >
-            //                 <option value="Done" >Done</option>
-            //                 <option value="Pending" >Pending</option>
-            //             </select>
-            //         </div>
-            //         <button type="submit" className="form-control btn btn-primary" >Add Todo</button>
-            //     </form>
-                
-            // </div>
+  
             <div className="body">
                 <div className="card-form">
                     <form onSubmit={this.handleToDoSubmit} >
@@ -76,7 +56,7 @@ handleIdChange = (event) => {
                             placeholder="Enter Title" />
                         </div>
                         <div className="row">
-                        <select value={this.state.Status} onChange={this.handleStatusChange} >
+                        <select className="select" value={this.state.Status} onChange={this.handleStatusChange} >
                             <option value="Done" >Done</option>
                             <option value="Pending" >Pending</option>
                         </select>

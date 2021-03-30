@@ -2,18 +2,14 @@
 
 
 
-body{
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    background: #c0392b;
-    font-family: Raleway;
-    color: white;
-    letter-spacing: 1px;
+.body{
+  display: inline;
+}
+  form{
+    display: inherit;
   }
-  
   .card-form{
+    
     width: 500px;
     border-radius: 10px;
     background: white;
@@ -39,7 +35,7 @@ body{
         justify-content: space-around;
         padding: 10px;
       }
-        input[type="text"]{
+        input[type="text"],.select{
           appearance: none;
           width: 100%;
           margin: 0 15px;
